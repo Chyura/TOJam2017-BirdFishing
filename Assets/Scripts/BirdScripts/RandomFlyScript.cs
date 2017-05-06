@@ -61,6 +61,5 @@ public class RandomFlyScript : MonoBehaviour {
 									box_center_y + shadow_disp + box_radius / compress);
 		Debug.Log(xValue + " " + yValue);
 		return new Vector3 (xValue, yValue, 0);
-
 	}
 }
