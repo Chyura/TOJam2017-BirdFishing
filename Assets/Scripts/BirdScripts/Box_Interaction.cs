@@ -31,6 +31,6 @@ public class Box_Interaction : MonoBehaviour {
 		dist_x = this.transform.position.x - box_center_x;
 		dist_y = this.transform.position.y - (box_center_y + shadow_disp);
 		distance = Mathf.Sqrt (dist_x * dist_x + dist_y * dist_y);
-		return Mathf.Floor (1.0 / distance);
+		return (int)Mathf.Floor (1.0f / distance);
 	}
 }
