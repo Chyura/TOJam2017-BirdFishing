@@ -8,7 +8,7 @@ public class RandomFlyScript : MonoBehaviour {
 	private int randomMin = 2;
 	private int randomMax = 20;
 	private Vector3[] screenBounds = new Vector3[4];
-	private float birdSpeed = 20f;
+	public float birdSpeed = 20f;
 
 	private int upper_bound_percent = 40;
 
@@ -16,8 +16,21 @@ public class RandomFlyScript : MonoBehaviour {
 	private float box_center_x = 0;
 	private float box_center_y = 0;
 	private int box_radius = 1;
-	private int shadow_disp = -1;
+	private int shadow_disp = -3;
 	private int compress = 3;
+
+	private int ran_dir = 0;
+	private float ran_x_speed, ran_y_speed;
+	private float min_speed = 0.5f;
+	private float max_speed = 1f;
+
+	private Vector3 delta = new Vector3(0,0,0);
+	private bool fly = false;
+
+	private float apparent_y = 0f;
+	private float horizon_scale = 0f;
+	private float scale_fact = 1.0f;
+	private float unit = 10.0f;
 	// Use this for initialization
 	void Start () {
 		
@@ -39,6 +52,7 @@ public class RandomFlyScript : MonoBehaviour {
 		}
 		randomPoints[numPoints] = getBoxLanding ();
 		moveBirb();
+
 	}
 
 	void moveBirb() {
@@ -47,9 +61,32 @@ public class RandomFlyScript : MonoBehaviour {
 			Debug.Log (randomPoints[i]);
 		}
 		iTween.MoveTo(gameObject, iTween.Hash("path", randomPoints, "speed", birdSpeed, 
-			"easetype", iTween.EaseType.spring));
+			"easetype", iTween.EaseType.spring, "oncomplete", "flyBirb"));
 
+	}
 
+	void wanderBirb(){
+	}
+	void flyBirb(){
+		//change animation
+		ran_dir = Random.Range(1,2);
+		ran_x_speed = min_speed + Random.value * (max_speed - min_speed);
+		if (ran_dir == 1) {
+			ran_x_speed *= -1;
+		}
+		iTween.MoveTo (gameObject, iTween.Hash ("position", new Vector3 (0, 100, 0),
+			"speed", birdSpeed, "easetyoe", iTween.EaseType.easeInOutSine));
+		delta = new Vector3(ran_x_speed, ran_y_speed, 0);
+		fly = true;
+		Debug.Log (delta);
+		Debug.Log ("fly");
+	}
+
+	void Update(){
+		//if (fly) {
+		//	transform.Translate(delta);
+		//}
+		rescaleBird ();
 	}
 
 	Vector3 getBoxLanding() {
@@ -59,7 +96,16 @@ public class RandomFlyScript : MonoBehaviour {
 		float xValue = Random.Range (box_center_x - box_radius, box_center_x + box_radius);
 		float yValue = Random.Range (box_center_y + shadow_disp - box_radius / compress, 
 									box_center_y + shadow_disp + box_radius / compress);
-		Debug.Log(xValue + " " + yValue);
 		return new Vector3 (xValue, yValue, 0);
+	}
+
+	void rescaleBird() {
+		apparent_y = gameObject.transform.position.y;
+		//Debug.Log (apparent_y);
+		if (apparent_y < -1) {
+			scale_fact = Mathf.Sqrt (Mathf.Abs (apparent_y - horizon_scale) / unit);
+			transform.localScale = new Vector3 (scale_fact, scale_fact, 0);
+			//transform.Translate(Vector3.up * Time.deltaTime);
+		}
 	}
 }
