@@ -14,12 +14,15 @@ public class BirbAnimation : MonoBehaviour {
 	void Update () {
 		
 		if (Input.GetKeyDown (KeyCode.F)) {
+			// fly
 			animator.SetInteger ("States", 1);
 		}
 		if (Input.GetKeyDown (KeyCode.P)) {
+			// peck
 			animator.SetInteger ("States", 2);
 		}
 		if (Input.GetKeyDown (KeyCode.H)) {
+			// hop
 			animator.SetInteger ("States", 0);
 		}
 		if (Input.GetKeyDown (KeyCode.LeftArrow)) {
