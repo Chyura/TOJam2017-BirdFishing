@@ -9,9 +9,10 @@ public class RandomFlyScript : MonoBehaviour {
 	private int randomMax = 20;
 	private Vector3[] screenBounds = new Vector3[4];
 	private float birdSpeed = 2f;
-
+	[SerializeField] Transform boxTrap;
 	// Use this for initialization
 	void Start () {
+		
 		// this might not take into account the size of the birb
 		screenBounds [0] = Camera.main.ScreenToWorldPoint (new Vector3(0, Camera.main.pixelHeight, 0));
 		screenBounds [1] = Camera.main.ScreenToWorldPoint (new Vector3(Camera.main.pixelWidth, 
@@ -27,12 +28,20 @@ public class RandomFlyScript : MonoBehaviour {
 				               			 screenBounds [0].y);
 			randomPoints [i] = new Vector3 (xValue, yValue, 0);
 		}
+		getBoxLanding ();
 		moveBirb();
 	}
 
 	void moveBirb() {
 		iTween.MoveTo(gameObject, iTween.Hash("path", randomPoints, "speed", birdSpeed, 
 			"easetype", iTween.EaseType.spring));
+
+
+	}
+
+	Vector3 getBoxLanding() {
+
+
 
 
 	}
