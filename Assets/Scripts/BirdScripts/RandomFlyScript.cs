@@ -40,6 +40,7 @@ public class RandomFlyScript : MonoBehaviour {
 	}
 
 	Vector3 getBoxLanding() {
+		return Vector3.zero;
 
 
 
