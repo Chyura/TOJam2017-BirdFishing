@@ -1,4 +1,5 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: 77ae45b2c6e6e2b4ab7fef048653149e
 timeCreated: 1494101110
 licenseType: Free
@@ -60,6 +61,13 @@ TextureImporter:
     21300106: birdbase_wip4_53
     21300108: birdbase_wip4_54
     21300110: birdbase_wip4_55
+=======
+guid: bbcdc439dd86d08499a1fedfbbc64081
+timeCreated: 1494101254
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName: {}
+>>>>>>> 2ccb1784f410ffb48fa05f1481bb6a76d61e145c
   serializedVersion: 4
   mipmaps:
     mipMapMode: 0
@@ -84,6 +92,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     filterMode: -1
+<<<<<<< HEAD
     aniso: 16
     mipBias: -1
     wrapMode: -1
@@ -91,6 +100,15 @@ TextureImporter:
   lightmap: 0
   compressionQuality: 50
   spriteMode: 2
+=======
+    aniso: -1
+    mipBias: -1
+    wrapMode: -1
+  nPOTScale: 1
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 0
+>>>>>>> 2ccb1784f410ffb48fa05f1481bb6a76d61e145c
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -100,7 +118,11 @@ TextureImporter:
   alphaUsage: 1
   alphaIsTransparency: 0
   spriteTessellationDetail: -1
+<<<<<<< HEAD
   textureType: 8
+=======
+  textureType: 0
+>>>>>>> 2ccb1784f410ffb48fa05f1481bb6a76d61e145c
   textureShape: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
@@ -114,6 +136,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+<<<<<<< HEAD
   - buildTarget: Standalone
     maxTextureSize: 2048
     textureFormat: -1
@@ -877,6 +900,11 @@ TextureImporter:
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
+=======
+  spriteSheet:
+    serializedVersion: 2
+    sprites: []
+>>>>>>> 2ccb1784f410ffb48fa05f1481bb6a76d61e145c
     outline: []
   spritePackingTag: 
   userData: 

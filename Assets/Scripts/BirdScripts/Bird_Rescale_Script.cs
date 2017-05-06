@@ -17,12 +17,10 @@ public class Bird_Rescale_Script : MonoBehaviour {
 	void Update () {
 		apparent_y = gameObject.transform.position.y;
 		//Debug.Log (apparent_y);
-		scale_fact = Mathf.Sqrt (Mathf.Abs (apparent_y - horizon_scale) / unit);
-		//gameObject.transform.localScale.x = scale_fact;
-		//gameObject.transform.localScale.y = scale_fact;
-		//this.transform.position.y += new Vector3(0, 0.1F, 0);
-		//transform.localScale.x = scale_fact;
-		//transform.localScale = new Vector3(scale_fact, scale_fact, 0);
-		transform.Translate(Vector3.up * Time.deltaTime);
+		if (apparent_y < -1){
+			scale_fact = Mathf.Sqrt (Mathf.Abs (apparent_y - horizon_scale) / unit);
+			transform.localScale = new Vector3(scale_fact, scale_fact, 0);
+		//transform.Translate(Vector3.up * Time.deltaTime);
+		}
 	}
 }
