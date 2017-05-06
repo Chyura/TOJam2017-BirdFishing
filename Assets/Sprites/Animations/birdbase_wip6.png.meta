@@ -1,9 +1,105 @@
 fileFormatVersion: 2
 guid: 0f0d2e6c5ae59eb44bbda2be20a88f0f
-timeCreated: 1494103478
+timeCreated: 1494109274
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: birdbase_wip6_0
+    21300002: birdbase_wip6_1
+    21300004: birdbase_wip6_2
+    21300006: birdbase_wip6_3
+    21300008: birdbase_wip6_4
+    21300010: birdbase_wip6_5
+    21300012: birdbase_wip6_6
+    21300014: birdbase_wip6_7
+    21300016: birdbase_wip6_8
+    21300018: birdbase_wip6_9
+    21300020: birdbase_wip6_10
+    21300022: birdbase_wip6_11
+    21300024: birdbase_wip6_12
+    21300026: birdbase_wip6_13
+    21300028: birdbase_wip6_14
+    21300030: birdbase_wip6_15
+    21300032: birdbase_wip6_16
+    21300034: birdbase_wip6_17
+    21300036: birdbase_wip6_18
+    21300038: birdbase_wip6_19
+    21300040: birdbase_wip6_20
+    21300042: birdbase_wip6_21
+    21300044: birdbase_wip6_22
+    21300046: birdbase_wip6_23
+    21300048: birdbase_wip6_24
+    21300050: birdbase_wip6_25
+    21300052: birdbase_wip6_26
+    21300054: birdbase_wip6_27
+    21300056: birdbase_wip6_28
+    21300058: birdbase_wip6_29
+    21300060: birdbase_wip6_30
+    21300062: birdbase_wip6_31
+    21300064: birdbase_wip6_32
+    21300066: birdbase_wip6_33
+    21300068: birdbase_wip6_34
+    21300070: birdbase_wip6_35
+    21300072: birdbase_wip6_36
+    21300074: birdbase_wip6_37
+    21300076: birdbase_wip6_38
+    21300078: birdbase_wip6_39
+    21300080: birdbase_wip6_40
+    21300082: birdbase_wip6_41
+    21300084: birdbase_wip6_42
+    21300086: birdbase_wip6_43
+    21300088: birdbase_wip6_44
+    21300090: birdbase_wip6_45
+    21300092: birdbase_wip6_46
+    21300094: birdbase_wip6_47
+    21300096: birdbase_wip6_48
+    21300098: birdbase_wip6_49
+    21300100: birdbase_wip6_50
+    21300102: birdbase_wip6_51
+    21300104: birdbase_wip6_52
+    21300106: birdbase_wip6_53
+    21300108: birdbase_wip6_54
+    21300110: birdbase_wip6_55
+    21300112: birdbase_wip6_56
+    21300114: birdbase_wip6_57
+    21300116: birdbase_wip6_58
+    21300118: birdbase_wip6_59
+    21300120: birdbase_wip6_60
+    21300122: birdbase_wip6_61
+    21300124: birdbase_wip6_62
+    21300126: birdbase_wip6_63
+    21300128: birdbase_wip6_64
+    21300130: birdbase_wip6_65
+    21300132: birdbase_wip6_66
+    21300134: birdbase_wip6_67
+    21300136: birdbase_wip6_68
+    21300138: birdbase_wip6_69
+    21300140: birdbase_wip6_70
+    21300142: birdbase_wip6_71
+    21300144: birdbase_wip6_72
+    21300146: birdbase_wip6_73
+    21300148: birdbase_wip6_74
+    21300150: birdbase_wip6_75
+    21300152: birdbase_wip6_76
+    21300154: birdbase_wip6_77
+    21300156: birdbase_wip6_78
+    21300158: birdbase_wip6_79
+    21300160: birdbase_wip6_80
+    21300162: birdbase_wip6_81
+    21300164: birdbase_wip6_82
+    21300166: birdbase_wip6_83
+    21300168: birdbase_wip6_84
+    21300170: birdbase_wip6_85
+    21300172: birdbase_wip6_86
+    21300174: birdbase_wip6_87
+    21300176: birdbase_wip6_88
+    21300178: birdbase_wip6_89
+    21300180: birdbase_wip6_90
+    21300182: birdbase_wip6_91
+    21300184: birdbase_wip6_92
+    21300186: birdbase_wip6_93
+    21300188: birdbase_wip6_94
+    21300190: birdbase_wip6_95
   serializedVersion: 4
   mipmaps:
     mipMapMode: 0
@@ -36,7 +132,7 @@ TextureImporter:
   compressionQuality: 50
   spriteMode: 2
   spriteExtrude: 1
-  spriteMeshType: 1
+  spriteMeshType: 0
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
@@ -92,7 +188,1255 @@ TextureImporter:
     overridden: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: birdbase_wip6_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1407
+        width: 200
+        height: 200
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: birdbase_wip6_1
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 1407
+        width: 200
+        height: 200
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: birdbase_wip6_2
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 1407
+        width: 200
+        height: 200
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: birdbase_wip6_3
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 1407
+        width: 200
+        height: 200
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: birdbase_wip6_4
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 1407
+        width: 200
+        height: 200
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: birdbase_wip6_5
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 1407
+        width: 200
+        height: 200
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: birdbase_wip6_6
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 1407
+        width: 200
+        height: 200
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: birdbase_wip6_7
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 1407
+        width: 200
+        height: 200
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: birdbase_wip6_8
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 1407
+        width: 200
+        height: 200
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: birdbase_wip6_9
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 1407
+        width: 200
+        height: 200
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: birdbase_wip6_10
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 1407
+        width: 200
+        height: 200
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: birdbase_wip6_11
+      rect:
+        serializedVersion: 2
+        x: 2200
+        y: 1407
+        width: 200
+        height: 200
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: birdbase_wip6_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1207
+        width: 200
+        height: 200
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: birdbase_wip6_13
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 1207
+        width: 200
+        height: 200
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: birdbase_wip6_14
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 1207
+        width: 200
+        height: 200
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: birdbase_wip6_15
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 1207
+        width: 200
+        height: 200
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: birdbase_wip6_16
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 1207
+        width: 200
+        height: 200
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: birdbase_wip6_17
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 1207
+        width: 200
+        height: 200
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: birdbase_wip6_18
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 1207
+        width: 200
+        height: 200
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: birdbase_wip6_19
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 1207
+        width: 200
+        height: 200
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: birdbase_wip6_20
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 1207
+        width: 200
+        height: 200
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: birdbase_wip6_21
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 1207
+        width: 200
+        height: 200
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: birdbase_wip6_22
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 1207
+        width: 200
+        height: 200
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: birdbase_wip6_23
+      rect:
+        serializedVersion: 2
+        x: 2200
+        y: 1207
+        width: 200
+        height: 200
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: birdbase_wip6_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1007
+        width: 200
+        height: 200
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: birdbase_wip6_25
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 1007
+        width: 200
+        height: 200
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: birdbase_wip6_26
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 1007
+        width: 200
+        height: 200
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: birdbase_wip6_27
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 1007
+        width: 200
+        height: 200
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: birdbase_wip6_28
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 1007
+        width: 200
+        height: 200
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: birdbase_wip6_29
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 1007
+        width: 200
+        height: 200
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: birdbase_wip6_30
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 1007
+        width: 200
+        height: 200
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: birdbase_wip6_31
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 1007
+        width: 200
+        height: 200
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: birdbase_wip6_32
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 1007
+        width: 200
+        height: 200
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: birdbase_wip6_33
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 1007
+        width: 200
+        height: 200
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: birdbase_wip6_34
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 1007
+        width: 200
+        height: 200
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: birdbase_wip6_35
+      rect:
+        serializedVersion: 2
+        x: 2200
+        y: 1007
+        width: 200
+        height: 200
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: birdbase_wip6_36
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 807
+        width: 200
+        height: 200
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: birdbase_wip6_37
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 807
+        width: 200
+        height: 200
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: birdbase_wip6_38
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 807
+        width: 200
+        height: 200
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: birdbase_wip6_39
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 807
+        width: 200
+        height: 200
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: birdbase_wip6_40
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 807
+        width: 200
+        height: 200
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: birdbase_wip6_41
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 807
+        width: 200
+        height: 200
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: birdbase_wip6_42
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 807
+        width: 200
+        height: 200
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: birdbase_wip6_43
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 807
+        width: 200
+        height: 200
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: birdbase_wip6_44
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 807
+        width: 200
+        height: 200
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: birdbase_wip6_45
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 807
+        width: 200
+        height: 200
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: birdbase_wip6_46
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 807
+        width: 200
+        height: 200
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: birdbase_wip6_47
+      rect:
+        serializedVersion: 2
+        x: 2200
+        y: 807
+        width: 200
+        height: 200
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: birdbase_wip6_48
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 607
+        width: 200
+        height: 200
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: birdbase_wip6_49
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 607
+        width: 200
+        height: 200
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: birdbase_wip6_50
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 607
+        width: 200
+        height: 200
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: birdbase_wip6_51
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 607
+        width: 200
+        height: 200
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: birdbase_wip6_52
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 607
+        width: 200
+        height: 200
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: birdbase_wip6_53
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 607
+        width: 200
+        height: 200
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: birdbase_wip6_54
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 607
+        width: 200
+        height: 200
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: birdbase_wip6_55
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 607
+        width: 200
+        height: 200
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: birdbase_wip6_56
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 607
+        width: 200
+        height: 200
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: birdbase_wip6_57
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 607
+        width: 200
+        height: 200
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: birdbase_wip6_58
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 607
+        width: 200
+        height: 200
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: birdbase_wip6_59
+      rect:
+        serializedVersion: 2
+        x: 2200
+        y: 607
+        width: 200
+        height: 200
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: birdbase_wip6_60
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 407
+        width: 200
+        height: 200
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: birdbase_wip6_61
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 407
+        width: 200
+        height: 200
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: birdbase_wip6_62
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 407
+        width: 200
+        height: 200
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: birdbase_wip6_63
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 407
+        width: 200
+        height: 200
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: birdbase_wip6_64
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 407
+        width: 200
+        height: 200
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: birdbase_wip6_65
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 407
+        width: 200
+        height: 200
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: birdbase_wip6_66
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 407
+        width: 200
+        height: 200
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: birdbase_wip6_67
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 407
+        width: 200
+        height: 200
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: birdbase_wip6_68
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 407
+        width: 200
+        height: 200
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: birdbase_wip6_69
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 407
+        width: 200
+        height: 200
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: birdbase_wip6_70
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 407
+        width: 200
+        height: 200
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: birdbase_wip6_71
+      rect:
+        serializedVersion: 2
+        x: 2200
+        y: 407
+        width: 200
+        height: 200
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: birdbase_wip6_72
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 207
+        width: 200
+        height: 200
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: birdbase_wip6_73
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 207
+        width: 200
+        height: 200
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: birdbase_wip6_74
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 207
+        width: 200
+        height: 200
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: birdbase_wip6_75
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 207
+        width: 200
+        height: 200
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: birdbase_wip6_76
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 207
+        width: 200
+        height: 200
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: birdbase_wip6_77
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 207
+        width: 200
+        height: 200
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: birdbase_wip6_78
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 207
+        width: 200
+        height: 200
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: birdbase_wip6_79
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 207
+        width: 200
+        height: 200
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: birdbase_wip6_80
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 207
+        width: 200
+        height: 200
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: birdbase_wip6_81
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 207
+        width: 200
+        height: 200
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: birdbase_wip6_82
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 207
+        width: 200
+        height: 200
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: birdbase_wip6_83
+      rect:
+        serializedVersion: 2
+        x: 2200
+        y: 207
+        width: 200
+        height: 200
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: birdbase_wip6_84
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 7
+        width: 200
+        height: 200
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: birdbase_wip6_85
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 7
+        width: 200
+        height: 200
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: birdbase_wip6_86
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 7
+        width: 200
+        height: 200
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: birdbase_wip6_87
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 7
+        width: 200
+        height: 200
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: birdbase_wip6_88
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 7
+        width: 200
+        height: 200
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: birdbase_wip6_89
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 7
+        width: 200
+        height: 200
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: birdbase_wip6_90
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 7
+        width: 200
+        height: 200
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: birdbase_wip6_91
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 7
+        width: 200
+        height: 200
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: birdbase_wip6_92
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 7
+        width: 200
+        height: 200
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: birdbase_wip6_93
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 7
+        width: 200
+        height: 200
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: birdbase_wip6_94
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 7
+        width: 200
+        height: 200
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: birdbase_wip6_95
+      rect:
+        serializedVersion: 2
+        x: 2200
+        y: 7
+        width: 200
+        height: 200
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
     outline: []
   spritePackingTag: 
   userData: 
