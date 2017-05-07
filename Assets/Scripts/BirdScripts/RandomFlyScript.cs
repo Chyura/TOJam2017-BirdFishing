@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class RandomFlyScript : MonoBehaviour {
 
+	private int birdtype = 1;
+
 	public AudioClip Flapping;
 	AudioSource audio;
 
@@ -12,7 +14,8 @@ public class RandomFlyScript : MonoBehaviour {
 	private int randomMin = 2;
 	private int randomMax = 20;
 	private Vector3[] screenBounds = new Vector3[4];
-	public float birdSpeed = 20f;
+	public float birdSpeed = 2f;
+	private float original_speed = 2f;
 
 	private int upper_bound_percent = 40;
 
@@ -20,7 +23,7 @@ public class RandomFlyScript : MonoBehaviour {
 	private float box_center_x = 0;
 	private float box_center_y = 0;
 	private int box_radius = 1;
-	private int shadow_disp = -3;
+	private int shadow_disp = -5;
 	private float compress = 2.0f;
 
 	private int ran_dir = 0;
@@ -37,6 +40,9 @@ public class RandomFlyScript : MonoBehaviour {
 	private int invert = 0;
 	private float dist = 0f;
 
+
+	private int flyconst = 5;
+
 	private float apparent_y = 0f;
 	private float horizon_scale = 0f;
 	private float scale_fact = 1.0f;
@@ -48,7 +54,8 @@ public class RandomFlyScript : MonoBehaviour {
 	private int state = 0;
 	private Vector3[] func_rand;
 
-
+	private int[] chances = new int[]{30, 20, 10, 10, 5, 5, 3, 3, 2};
+	private int sum, type;
 
 	private float randf, randf2;
 	// Use this for initialization
@@ -86,8 +93,25 @@ public class RandomFlyScript : MonoBehaviour {
 		randomPoints[numPoints] = getBoxLanding ();
 
 
-		///fly in 
+		flyin();
+	}
 
+	Vector3[] randomPointGen(float x1, float x2, float y1, float y2, int length){
+		func_rand = new Vector3[length];
+		for (int i = 0; i < length; ++i) {
+			float xValue = Random.Range (x1, x2);
+			float yValue = Random.Range (y1, y2);
+
+			func_rand [i] = new Vector3 (xValue, yValue, 0);
+		}
+		return func_rand;
+	}
+
+	void flyin(){
+
+		birdtype = gen_random_bird();
+
+		Debug.Log (birdtype);
 
 		ran_dir = Random.Range(1,2);
 		ran_x_speed = min_speed + Random.value * (max_speed - min_speed);
@@ -101,6 +125,9 @@ public class RandomFlyScript : MonoBehaviour {
 		randf = Random.Range (-5, 5);
 		randf2 = Random.Range(-5, 0);
 
+		birdSpeed = original_speed;
+		trap_down = false;
+
 		iTween.MoveTo (gameObject, iTween.Hash ("position", new Vector3 (randf, randf2, 0),
 			"speed", birdSpeed * flyConstMultiplier / 3, 
 			"easetype", iTween.EaseType.easeInOutSine, "oncomplete", "moveBirb"));
@@ -108,25 +135,10 @@ public class RandomFlyScript : MonoBehaviour {
 		fly = true;
 
 
+
+
 		scale_fact = Mathf.Sqrt (Mathf.Abs (randf2 - horizon_scale) / unit);
 		transform.localScale = new Vector3 (scale_fact, scale_fact, 0);
-	
-
-		//
-
-		//moveBirb();
-
-	}
-
-	Vector3[] randomPointGen(float x1, float x2, float y1, float y2, int length){
-		func_rand = new Vector3[length];
-		for (int i = 0; i < length; ++i) {
-			float xValue = Random.Range (x1, x2);
-			float yValue = Random.Range (y1, y2);
-
-			func_rand [i] = new Vector3 (xValue, yValue, 0);
-		}
-		return func_rand;
 	}
 
 	void moveBirb() {
@@ -174,7 +186,7 @@ public class RandomFlyScript : MonoBehaviour {
 		}
 		ran_dir = Random.Range (-200, 200);
 		iTween.MoveTo (gameObject, iTween.Hash ("position", new Vector3 (ran_dir, 100, 0),
-			"speed", birdSpeed * flyConstMultiplier, "delay", flyDelayTime, "easetype", iTween.EaseType.easeInQuad));
+			"speed", birdSpeed * flyConstMultiplier, "delay", flyDelayTime, "easetype", iTween.EaseType.easeInQuad, "oncomplete", "flyin"));
 		delta = new Vector3(ran_x_speed, ran_y_speed, 0);
 		fly = true;
 		audio.Play ();
@@ -209,15 +221,21 @@ public class RandomFlyScript : MonoBehaviour {
 		dist = Mathf.Sqrt((currpos_x - box_center_x)*(currpos_x - box_center_x) + (currpos_y - box_center_y)*(currpos_y - box_center_y)); 
 
 		if (Input.GetKeyDown (KeyCode.Space)) {
-			if ((!trap_down) && (dist < 1)) {
+			if ((!trap_down) && (dist < 2)) {
 				trap_down = true;
 				flyBirb ();
 				state = 1;
-				birdSpeed *= 3;
+				birdSpeed *= flyconst;
+
+
+				///BIRD IS 'CAUGHT' HERE, LOG with var birdtype///
+
 			}
+
+
 		}
 
-		animator.SetInteger ("States", state); // state + 3*invert
+		animator.SetInteger ("States", state + 3*invert); // state + 3*invert
 
 		lastpos_x = currpos_x; 
 	}
@@ -240,5 +258,26 @@ public class RandomFlyScript : MonoBehaviour {
 			transform.localScale = new Vector3 (scale_fact, scale_fact, 0);
 			//transform.Translate(Vector3.up * Time.deltaTime);
 		}
+	}
+
+	int gen_random_bird(){
+		sum = 0;
+		type = 0;
+		for (int i = 0; i < chances.Length; i++) {
+			sum += chances [i];
+		}
+		randf2 = Random.Range (0, sum + 1);
+		for (int i = 0; i < chances.Length; i++) {
+			randf2 -= chances [i];
+			if (randf2 <= 0) {
+				type = i;
+				break;
+			}
+		}
+		if (type == 0) {
+			type = 1;
+		}
+		return type;
+		//returns 1 - 8
 	}
 }
