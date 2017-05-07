@@ -9,6 +9,8 @@ public class RandomFlyScript : MonoBehaviour {
 	public AudioClip Flapping;
 	AudioSource audio;
 
+	[SerializeField] RuntimeAnimatorController[] controllers;
+
 	private Vector3[] randomPoints;
 	//private float currentPathPercent = 0f;
 	private int randomMin = 2;
@@ -21,6 +23,7 @@ public class RandomFlyScript : MonoBehaviour {
 
 	[SerializeField] Animator boxAnim;
 	[SerializeField] Transform boxTrap;
+	[SerializeField] CollectionController collection;
 	private float box_center_x = 0;
 	private float box_center_y = 0;
 	private int box_radius = 1;
@@ -111,6 +114,7 @@ public class RandomFlyScript : MonoBehaviour {
 	void flyin(){
 
 		birdtype = gen_random_bird();
+		animator.runtimeAnimatorController = 
 
 		Debug.Log (birdtype);
 
@@ -231,6 +235,7 @@ public class RandomFlyScript : MonoBehaviour {
 
 
 				///BIRD IS 'CAUGHT' HERE, LOG with var birdtype///
+				collection.changeBirb(birdtype);
 
 			}
 

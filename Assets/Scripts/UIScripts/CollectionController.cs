@@ -4,21 +4,23 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class CollectionController : MonoBehaviour {
-	[SerializeField] Animator[] birbList;
-	[SerializeField] Animator bigBirb;
-	[SerializeField] RuntimeAnimatorController[] birbAnims;
-	[SerializeField] RuntimeAnimatorController mysteryBirbAnim;
+	[SerializeField] Animation[] birbList;
+	[SerializeField] Animation bigBirb;
+	[SerializeField] AnimationClip[] birbAnims;
+	[SerializeField] AnimationClip mysteryBirbAnim;
+	[SerializeField] Image goat;
+	[SerializeField] Sprite goatI;
 
 	// Use this for initialization
 	void Start () {
 		for (int i = 0; i < birbList.Length; ++i) {
-			birbList [i].runtimeAnimatorController = mysteryBirbAnim;
-			birbList [i].SetInteger ("States", 3);
+			birbList [i].clip = mysteryBirbAnim;
 		}
 	}
 
-	void changeBirb(int birb) {
-		birbList[birb].runtimeAnimatorController = birbAnims[birb];
-		birbList [birb].SetInteger ("States", 3);
+	public void changeBirb(int birb) {
+		birbList[birb].clip = birbAnims[birb];
 	}
+
+
 }
