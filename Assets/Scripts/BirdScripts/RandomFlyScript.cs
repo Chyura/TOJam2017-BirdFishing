@@ -34,8 +34,9 @@ public class RandomFlyScript : MonoBehaviour {
 	private Animator animator;
 	// Use this for initialization
 	void Start () {
+
 		animator = this.gameObject.GetComponent<Animator> ();
-		// this might not take into account the size of the birb
+
 		screenBounds [0] = Camera.main.ScreenToWorldPoint (new Vector3(0, Camera.main.pixelHeight, 0));
 		screenBounds [1] = Camera.main.ScreenToWorldPoint (new Vector3(Camera.main.pixelWidth, 
 			Camera.main.pixelHeight, 0));
@@ -43,6 +44,7 @@ public class RandomFlyScript : MonoBehaviour {
 		screenBounds [3] = Camera.main.ScreenToWorldPoint (new Vector3(0, 0, 0));
 		int numPoints = Random.Range (randomMin, randomMax);
 		randomPoints = new Vector3[numPoints+1];
+		Debug.Log ("numPoints " + numPoints + " array length " + randomPoints.Length);
 		for (int i = 0; i < numPoints; ++i) {
 			float xValue = Random.Range (screenBounds[0].x, 
 										 screenBounds[1].x);
@@ -62,9 +64,8 @@ public class RandomFlyScript : MonoBehaviour {
 			Debug.Log (randomPoints[i]);
 		}
 
-		//iTween.MoveTo(gameObject, iTween.Hash("path", randomPoints, "speed", birdSpeed/30, 
-		//	"easetype", iTween.EaseType.spring, "oncomplete", "flyBirb"));
-		flyBirb ();
+		iTween.MoveTo(gameObject, iTween.Hash("path", randomPoints, "speed", birdSpeed, 
+			"easetype", iTween.EaseType.linear, "oncomplete", "flyBirb"));
 
 	}
 
@@ -72,6 +73,7 @@ public class RandomFlyScript : MonoBehaviour {
 	}
 	void flyBirb(){
 		//change animation
+		Debug.Log("completed moveBirb");
 		ran_dir = Random.Range(1,2);
 		ran_x_speed = min_speed + Random.value * (max_speed - min_speed);
 		if (ran_dir == 1) {
