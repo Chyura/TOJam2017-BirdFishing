@@ -22,5 +22,8 @@ public class CollectionController : MonoBehaviour {
 		birbList[birb].clip = birbAnims[birb];
 	}
 
+	public void changeText(int birb) {
+
+	}
 
 }
