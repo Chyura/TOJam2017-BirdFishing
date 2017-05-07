@@ -19,6 +19,7 @@ public class RandomFlyScript : MonoBehaviour {
 
 	private int upper_bound_percent = 40;
 
+	[SerializeField] Animator boxAnim;
 	[SerializeField] Transform boxTrap;
 	private float box_center_x = 0;
 	private float box_center_y = 0;
@@ -190,8 +191,6 @@ public class RandomFlyScript : MonoBehaviour {
 		delta = new Vector3(ran_x_speed, ran_y_speed, 0);
 		fly = true;
 		audio.Play ();
-		Debug.Log (delta);
-		Debug.Log ("fly");
 		//set invert conditional
 		state = 1;
 	}
@@ -221,7 +220,10 @@ public class RandomFlyScript : MonoBehaviour {
 		dist = Mathf.Sqrt((currpos_x - box_center_x)*(currpos_x - box_center_x) + (currpos_y - box_center_y)*(currpos_y - box_center_y)); 
 
 		if (Input.GetKeyDown (KeyCode.Space)) {
-			if ((!trap_down) && (dist < 2)) {
+
+			
+			if ((!trap_down) && (dist < 2) && !boxAnim.GetBool("BoxFall")) {
+
 				trap_down = true;
 				flyBirb ();
 				state = 1;
