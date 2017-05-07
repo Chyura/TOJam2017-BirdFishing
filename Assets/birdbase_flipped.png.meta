@@ -1,9 +1,105 @@
 fileFormatVersion: 2
 guid: 600ddac3edf1b3e429d220a09d99745b
-timeCreated: 1494124566
+timeCreated: 1494179738
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: birdbase_flipped_0
+    21300002: birdbase_flipped_1
+    21300004: birdbase_flipped_2
+    21300006: birdbase_flipped_3
+    21300008: birdbase_flipped_4
+    21300010: birdbase_flipped_5
+    21300012: birdbase_flipped_6
+    21300014: birdbase_flipped_7
+    21300016: birdbase_flipped_8
+    21300018: birdbase_flipped_9
+    21300020: birdbase_flipped_10
+    21300022: birdbase_flipped_11
+    21300024: birdbase_flipped_12
+    21300026: birdbase_flipped_13
+    21300028: birdbase_flipped_14
+    21300030: birdbase_flipped_15
+    21300032: birdbase_flipped_16
+    21300034: birdbase_flipped_17
+    21300036: birdbase_flipped_18
+    21300038: birdbase_flipped_19
+    21300040: birdbase_flipped_20
+    21300042: birdbase_flipped_21
+    21300044: birdbase_flipped_22
+    21300046: birdbase_flipped_23
+    21300048: birdbase_flipped_24
+    21300050: birdbase_flipped_25
+    21300052: birdbase_flipped_26
+    21300054: birdbase_flipped_27
+    21300056: birdbase_flipped_28
+    21300058: birdbase_flipped_29
+    21300060: birdbase_flipped_30
+    21300062: birdbase_flipped_31
+    21300064: birdbase_flipped_32
+    21300066: birdbase_flipped_33
+    21300068: birdbase_flipped_34
+    21300070: birdbase_flipped_35
+    21300072: birdbase_flipped_36
+    21300074: birdbase_flipped_37
+    21300076: birdbase_flipped_38
+    21300078: birdbase_flipped_39
+    21300080: birdbase_flipped_40
+    21300082: birdbase_flipped_41
+    21300084: birdbase_flipped_42
+    21300086: birdbase_flipped_43
+    21300088: birdbase_flipped_44
+    21300090: birdbase_flipped_45
+    21300092: birdbase_flipped_46
+    21300094: birdbase_flipped_47
+    21300096: birdbase_flipped_48
+    21300098: birdbase_flipped_49
+    21300100: birdbase_flipped_50
+    21300102: birdbase_flipped_51
+    21300104: birdbase_flipped_52
+    21300106: birdbase_flipped_53
+    21300108: birdbase_flipped_54
+    21300110: birdbase_flipped_55
+    21300112: birdbase_flipped_56
+    21300114: birdbase_flipped_57
+    21300116: birdbase_flipped_58
+    21300118: birdbase_flipped_59
+    21300120: birdbase_flipped_60
+    21300122: birdbase_flipped_61
+    21300124: birdbase_flipped_62
+    21300126: birdbase_flipped_63
+    21300128: birdbase_flipped_64
+    21300130: birdbase_flipped_65
+    21300132: birdbase_flipped_66
+    21300134: birdbase_flipped_67
+    21300136: birdbase_flipped_68
+    21300138: birdbase_flipped_69
+    21300140: birdbase_flipped_70
+    21300142: birdbase_flipped_71
+    21300144: birdbase_flipped_72
+    21300146: birdbase_flipped_73
+    21300148: birdbase_flipped_74
+    21300150: birdbase_flipped_75
+    21300152: birdbase_flipped_76
+    21300154: birdbase_flipped_77
+    21300156: birdbase_flipped_78
+    21300158: birdbase_flipped_79
+    21300160: birdbase_flipped_80
+    21300162: birdbase_flipped_81
+    21300164: birdbase_flipped_82
+    21300166: birdbase_flipped_83
+    21300168: birdbase_flipped_84
+    21300170: birdbase_flipped_85
+    21300172: birdbase_flipped_86
+    21300174: birdbase_flipped_87
+    21300176: birdbase_flipped_88
+    21300178: birdbase_flipped_89
+    21300180: birdbase_flipped_90
+    21300182: birdbase_flipped_91
+    21300184: birdbase_flipped_92
+    21300186: birdbase_flipped_93
+    21300188: birdbase_flipped_94
+    21300190: birdbase_flipped_95
   serializedVersion: 4
   mipmaps:
     mipMapMode: 0
@@ -28,15 +124,15 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     filterMode: -1
-    aniso: -1
+    aniso: 16
     mipBias: -1
     wrapMode: -1
-  nPOTScale: 1
+  nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 0
-  spriteExtrude: 1
-  spriteMeshType: 1
+  spriteMode: 2
+  spriteExtrude: 0
+  spriteMeshType: 0
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
@@ -44,7 +140,7 @@ TextureImporter:
   alphaUsage: 1
   alphaIsTransparency: 0
   spriteTessellationDetail: -1
-  textureType: 0
+  textureType: 8
   textureShape: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
@@ -58,9 +154,1265 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: birdbase_flipped_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1406.125
+        width: 200
+        height: 200.875
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: birdbase_flipped_1
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 1406.125
+        width: 200
+        height: 200.875
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: birdbase_flipped_2
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 1406.125
+        width: 200
+        height: 200.875
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: birdbase_flipped_3
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 1406.125
+        width: 200
+        height: 200.875
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: birdbase_flipped_4
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 1406.125
+        width: 200
+        height: 200.875
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: birdbase_flipped_5
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 1406.125
+        width: 200
+        height: 200.875
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: birdbase_flipped_6
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 1406.125
+        width: 200
+        height: 200.875
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: birdbase_flipped_7
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 1406.125
+        width: 200
+        height: 200.875
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: birdbase_flipped_8
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 1406.125
+        width: 200
+        height: 200.875
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: birdbase_flipped_9
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 1406.125
+        width: 200
+        height: 200.875
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: birdbase_flipped_10
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 1406.125
+        width: 200
+        height: 200.875
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: birdbase_flipped_11
+      rect:
+        serializedVersion: 2
+        x: 2200
+        y: 1406.125
+        width: 200
+        height: 200.875
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: birdbase_flipped_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1206.125
+        width: 200
+        height: 200.875
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: birdbase_flipped_13
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 1206.125
+        width: 200
+        height: 200.875
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: birdbase_flipped_14
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 1206.125
+        width: 200
+        height: 200.875
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: birdbase_flipped_15
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 1206.125
+        width: 200
+        height: 200.875
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: birdbase_flipped_16
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 1206.125
+        width: 200
+        height: 200.875
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: birdbase_flipped_17
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 1206.125
+        width: 200
+        height: 200.875
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: birdbase_flipped_18
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 1206.125
+        width: 200
+        height: 200.875
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: birdbase_flipped_19
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 1206.125
+        width: 200
+        height: 200.875
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: birdbase_flipped_20
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 1206.125
+        width: 200
+        height: 200.875
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: birdbase_flipped_21
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 1206.125
+        width: 200
+        height: 200.875
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: birdbase_flipped_22
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 1206.125
+        width: 200
+        height: 200.875
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: birdbase_flipped_23
+      rect:
+        serializedVersion: 2
+        x: 2200
+        y: 1206.125
+        width: 200
+        height: 200.875
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: birdbase_flipped_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1006.125
+        width: 200
+        height: 200.875
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: birdbase_flipped_25
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 1006.125
+        width: 200
+        height: 200.875
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: birdbase_flipped_26
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 1006.125
+        width: 200
+        height: 200.875
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: birdbase_flipped_27
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 1006.125
+        width: 200
+        height: 200.875
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: birdbase_flipped_28
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 1006.125
+        width: 200
+        height: 200.875
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: birdbase_flipped_29
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 1006.125
+        width: 200
+        height: 200.875
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: birdbase_flipped_30
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 1006.125
+        width: 200
+        height: 200.875
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: birdbase_flipped_31
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 1006.125
+        width: 200
+        height: 200.875
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: birdbase_flipped_32
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 1006.125
+        width: 200
+        height: 200.875
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: birdbase_flipped_33
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 1006.125
+        width: 200
+        height: 200.875
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: birdbase_flipped_34
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 1006.125
+        width: 200
+        height: 200.875
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: birdbase_flipped_35
+      rect:
+        serializedVersion: 2
+        x: 2200
+        y: 1006.125
+        width: 200
+        height: 200.875
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: birdbase_flipped_36
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 806.125
+        width: 200
+        height: 200.875
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: birdbase_flipped_37
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 806.125
+        width: 200
+        height: 200.875
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: birdbase_flipped_38
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 806.125
+        width: 200
+        height: 200.875
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: birdbase_flipped_39
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 806.125
+        width: 200
+        height: 200.875
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: birdbase_flipped_40
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 806.125
+        width: 200
+        height: 200.875
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: birdbase_flipped_41
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 806.125
+        width: 200
+        height: 200.875
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: birdbase_flipped_42
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 806.125
+        width: 200
+        height: 200.875
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: birdbase_flipped_43
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 806.125
+        width: 200
+        height: 200.875
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: birdbase_flipped_44
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 806.125
+        width: 200
+        height: 200.875
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: birdbase_flipped_45
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 806.125
+        width: 200
+        height: 200.875
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: birdbase_flipped_46
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 806.125
+        width: 200
+        height: 200.875
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: birdbase_flipped_47
+      rect:
+        serializedVersion: 2
+        x: 2200
+        y: 806.125
+        width: 200
+        height: 200.875
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: birdbase_flipped_48
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 606.125
+        width: 200
+        height: 200.875
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: birdbase_flipped_49
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 606.125
+        width: 200
+        height: 200.875
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: birdbase_flipped_50
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 606.125
+        width: 200
+        height: 200.875
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: birdbase_flipped_51
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 606.125
+        width: 200
+        height: 200.875
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: birdbase_flipped_52
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 606.125
+        width: 200
+        height: 200.875
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: birdbase_flipped_53
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 606.125
+        width: 200
+        height: 200.875
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: birdbase_flipped_54
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 606.125
+        width: 200
+        height: 200.875
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: birdbase_flipped_55
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 606.125
+        width: 200
+        height: 200.875
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: birdbase_flipped_56
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 606.125
+        width: 200
+        height: 200.875
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: birdbase_flipped_57
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 606.125
+        width: 200
+        height: 200.875
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: birdbase_flipped_58
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 606.125
+        width: 200
+        height: 200.875
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: birdbase_flipped_59
+      rect:
+        serializedVersion: 2
+        x: 2200
+        y: 606.125
+        width: 200
+        height: 200.875
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: birdbase_flipped_60
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 406.125
+        width: 200
+        height: 200.875
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: birdbase_flipped_61
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 406.125
+        width: 200
+        height: 200.875
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: birdbase_flipped_62
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 406.125
+        width: 200
+        height: 200.875
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: birdbase_flipped_63
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 406.125
+        width: 200
+        height: 200.875
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: birdbase_flipped_64
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 406.125
+        width: 200
+        height: 200.875
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: birdbase_flipped_65
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 406.125
+        width: 200
+        height: 200.875
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: birdbase_flipped_66
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 406.125
+        width: 200
+        height: 200.875
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: birdbase_flipped_67
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 406.125
+        width: 200
+        height: 200.875
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: birdbase_flipped_68
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 406.125
+        width: 200
+        height: 200.875
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: birdbase_flipped_69
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 406.125
+        width: 200
+        height: 200.875
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: birdbase_flipped_70
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 406.125
+        width: 200
+        height: 200.875
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: birdbase_flipped_71
+      rect:
+        serializedVersion: 2
+        x: 2200
+        y: 406.125
+        width: 200
+        height: 200.875
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: birdbase_flipped_72
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 206.125
+        width: 200
+        height: 200.875
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: birdbase_flipped_73
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 206.125
+        width: 200
+        height: 200.875
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: birdbase_flipped_74
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 206.125
+        width: 200
+        height: 200.875
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: birdbase_flipped_75
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 206.125
+        width: 200
+        height: 200.875
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: birdbase_flipped_76
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 206.125
+        width: 200
+        height: 200.875
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: birdbase_flipped_77
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 206.125
+        width: 200
+        height: 200.875
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: birdbase_flipped_78
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 206.125
+        width: 200
+        height: 200.875
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: birdbase_flipped_79
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 206.125
+        width: 200
+        height: 200.875
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: birdbase_flipped_80
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 206.125
+        width: 200
+        height: 200.875
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: birdbase_flipped_81
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 206.125
+        width: 200
+        height: 200.875
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: birdbase_flipped_82
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 206.125
+        width: 200
+        height: 200.875
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: birdbase_flipped_83
+      rect:
+        serializedVersion: 2
+        x: 2200
+        y: 206.125
+        width: 200
+        height: 200.875
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: birdbase_flipped_84
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 6.125
+        width: 200
+        height: 200.875
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: birdbase_flipped_85
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 6.125
+        width: 200
+        height: 200.875
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: birdbase_flipped_86
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 6.125
+        width: 200
+        height: 200.875
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: birdbase_flipped_87
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 6.125
+        width: 200
+        height: 200.875
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: birdbase_flipped_88
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 6.125
+        width: 200
+        height: 200.875
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: birdbase_flipped_89
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 6.125
+        width: 200
+        height: 200.875
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: birdbase_flipped_90
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 6.125
+        width: 200
+        height: 200.875
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: birdbase_flipped_91
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 6.125
+        width: 200
+        height: 200.875
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: birdbase_flipped_92
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 6.125
+        width: 200
+        height: 200.875
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: birdbase_flipped_93
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 6.125
+        width: 200
+        height: 200.875
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: birdbase_flipped_94
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 6.125
+        width: 200
+        height: 200.875
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: birdbase_flipped_95
+      rect:
+        serializedVersion: 2
+        x: 2200
+        y: 6.125
+        width: 200
+        height: 200.875
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
     outline: []
   spritePackingTag: 
   userData: 
