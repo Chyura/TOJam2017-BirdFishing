@@ -14,6 +14,7 @@ public class BoxAnimatorScript : MonoBehaviour {
 	void Update () {
 		if (Input.GetKeyDown (KeyCode.Space)) {
 			animator.SetBool ("BoxFall", true);
+
 		}
 	}
 }
