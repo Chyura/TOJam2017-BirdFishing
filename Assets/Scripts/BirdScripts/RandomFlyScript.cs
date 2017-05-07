@@ -23,6 +23,8 @@ public class RandomFlyScript : MonoBehaviour {
 	private float ran_x_speed, ran_y_speed;
 	private float min_speed = 0.5f;
 	private float max_speed = 1f;
+	private float flyDelayTime = 1f;
+	private float flyConstMultiplier = 5f;
 
 	private Vector3 delta = new Vector3(0,0,0);
 	private bool fly = false;
@@ -59,10 +61,7 @@ public class RandomFlyScript : MonoBehaviour {
 	}
 
 	void moveBirb() {
-		for (int i = 0; i < randomPoints.Length; i++) {
-
-			Debug.Log (randomPoints[i]);
-		}
+		animator.SetInteger ("States", 0);
 
 		iTween.MoveTo(gameObject, iTween.Hash("path", randomPoints, "speed", birdSpeed, 
 			"easetype", iTween.EaseType.linear, "oncomplete", "flyBirb"));
@@ -81,7 +80,7 @@ public class RandomFlyScript : MonoBehaviour {
 		}
 		ran_dir = Random.Range (-200, 200);
 		iTween.MoveTo (gameObject, iTween.Hash ("position", new Vector3 (ran_dir, 100, 0),
-			"speed", birdSpeed/4, "easetyoe", iTween.EaseType.easeInOutSine));
+			"speed", birdSpeed * flyConstMultiplier, "delay", flyDelayTime, "easetype", iTween.EaseType.easeInQuad));
 		delta = new Vector3(ran_x_speed, ran_y_speed, 0);
 		fly = true;
 		Debug.Log (delta);
