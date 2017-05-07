@@ -39,7 +39,7 @@ public class ShowPanelScript : MonoBehaviour {
 				otherPanel.transform.position, "time",
 				timeToComplete, "easetype", iTween.EaseType.easeInOutQuad,
 				"oncomplete", "scrollDownBackground", "oncompletetarget",
-				panelOut));
+				panelOut, "oncompleteparams", "title"));
 			Managers.audio.stopAudio (Managers.audio.getAudio (1));
 		} else if (type == "normal" || type == "inverse") {
 			iTween.MoveTo (panel, iTween.Hash ("position",
@@ -77,7 +77,7 @@ public class ShowPanelScript : MonoBehaviour {
 				otherPanel.transform.position, "time",
 				timeToComplete, "easetype", iTween.EaseType.easeInOutQuad,
 				"oncomplete", "scrollDownBackground", "oncompletetarget",
-				panelOut));
+				panelOut, "oncompleteparams", "game"));
 		} else if (type == "normal" || type == "complete") {
 			iTween.MoveTo (panel, iTween.Hash ("position",
 				otherPanel.transform.position, "time",
@@ -108,11 +108,20 @@ public class ShowPanelScript : MonoBehaviour {
 	}
 
 
-	void scrollDownBackground() {
-		iTween.MoveTo(background, iTween.Hash("position",
-			gameBackgroundPosition, "time", timeToComplete, "easetype",
-			iTween.EaseType.linear, "islocal", false,
-			"oncomplete", "loadStartScene", "oncompletetarget", panelOut));
+	void scrollDownBackground(string called) {
+		if (called == "title") {
+			iTween.MoveTo (background, iTween.Hash ("position",
+				gameBackgroundPosition, "time", timeToComplete, "easetype",
+				iTween.EaseType.linear, "islocal", false,
+				"oncomplete", "loadStartScene", "oncompletetarget", panelOut));
+		} else if (called == "game") {
+			Debug.Log (called);
+			iTween.MoveTo (background, iTween.Hash ("position",
+				gameBackgroundPosition, "time", timeToComplete, "easetype",
+				iTween.EaseType.linear, "islocal", false,
+				"oncomplete", "moveInPanel", "oncompletetarget", panelOut,
+				"oncompleteparams", "inverse"));
+		}
 	}
 
 	void loadStartScene() {
@@ -135,12 +144,12 @@ public class ShowPanelScript : MonoBehaviour {
 		} else {
 			panel = panelOut;
 		}
-		Debug.Log (center);
+		Debug.Log (type);
 		iTween.MoveTo (panel, iTween.Hash ("position",
 			center, "time", timeToComplete, "easetype",
 			iTween.EaseType.easeInOutQuad));
-		if (birbs != null) {
-			iTween.Resume (birbs);
+		if (birbs != null && type == "inverse") {
+			iTween.Resume (birbs, true);
 		}
 	}
 
