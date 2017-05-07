@@ -114,7 +114,6 @@ public class RandomFlyScript : MonoBehaviour {
 	void flyin(){
 
 		birdtype = gen_random_bird() - 1;
-		Debug.Log (birdtype);
 		animator.runtimeAnimatorController = controllers [birdtype];
 
 		ran_dir = Random.Range(1,2);

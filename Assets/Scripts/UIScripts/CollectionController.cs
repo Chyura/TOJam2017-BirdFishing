@@ -31,6 +31,7 @@ public class CollectionController : MonoBehaviour {
 	}
 
 	public void changeText(int birb) {
+		Debug.Log (birb + " " + Static_Text.birdcaught[birb]);
 		if (Static_Text.birdcaught[birb] >= 1) {
 			biggerBirb.sprite = birbTakeImage [birb];
 			name.text = Static_Text.birdnames [birb];

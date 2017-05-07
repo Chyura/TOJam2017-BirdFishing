@@ -2,7 +2,8 @@
 
 public static class Static_Text {
 
-	public static string[] birdnames =new string[]{"Pink", "Blue", "Robin", "Owl", "Penguin", "Chicken", "Pig", "Canary", "Goat"};
+	public static string[] birdnames =new string[]{"boring pink birb", "social media birb", "birb wonder", "hooot hoot", "pittsbirb penguin", 
+		"cluck", "songbirb", "when pigs fly", "goatbirb"};
 	public static int[] birdcaught = new int[]{0, 0, 0, 0, 0, 0, 0, 0, 0}; 
 	public static string[] flavortext = new string[] {
 		"this be the default birb.  it pink and precious!!  these are manyful, but they're all special. every single one.  if u think " +
