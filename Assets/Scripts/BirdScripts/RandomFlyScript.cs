@@ -47,6 +47,10 @@ public class RandomFlyScript : MonoBehaviour {
 	private float lastpos_x = 0f;
 	private int state = 0;
 	private Vector3[] func_rand;
+
+
+
+	private float randf, randf2;
 	// Use this for initialization
 	void Start () {
 
@@ -80,7 +84,37 @@ public class RandomFlyScript : MonoBehaviour {
 		}
 		*/
 		randomPoints[numPoints] = getBoxLanding ();
-		moveBirb();
+
+
+		///fly in 
+
+
+		ran_dir = Random.Range(1,2);
+		ran_x_speed = min_speed + Random.value * (max_speed - min_speed);
+		if (ran_dir == 1) {
+			ran_x_speed *= -1;
+		}
+		randf = Random.Range (-20, 20);
+		randf2 = Random.Range (-20, 20);
+		this.transform.position = new Vector3 (randf, randf2, 0);
+
+		randf = Random.Range (-5, 5);
+		randf2 = Random.Range(-5, 0);
+
+		iTween.MoveTo (gameObject, iTween.Hash ("position", new Vector3 (randf, randf2, 0),
+			"speed", birdSpeed * flyConstMultiplier / 3, 
+			"easetype", iTween.EaseType.easeInOutSine, "oncomplete", "moveBirb"));
+		state = 1;
+		fly = true;
+
+
+		scale_fact = Mathf.Sqrt (Mathf.Abs (randf2 - horizon_scale) / unit);
+		transform.localScale = new Vector3 (scale_fact, scale_fact, 0);
+	
+
+		//
+
+		//moveBirb();
 
 	}
 
@@ -104,7 +138,8 @@ public class RandomFlyScript : MonoBehaviour {
 
 		//animator.SetInteger ("States", 0);
 
-
+		fly = false;
+		state = 0;
 		iTween.MoveTo(gameObject, iTween.Hash("name", "birbs", "path", randomPoints, "speed", birdSpeed, 
 			"easetype", iTween.EaseType.linear, "oncomplete", "wanderBirb"));
 		
@@ -149,11 +184,13 @@ public class RandomFlyScript : MonoBehaviour {
 	}
 
 	void Update(){
+
+		currpos_x = gameObject.transform.position.x;
+		currpos_y = gameObject.transform.position.y;
+
 		if (!fly) {
 			rescaleBird ();
 		}
-		currpos_x = gameObject.transform.position.x;
-		currpos_y = gameObject.transform.position.y;
 
 
 		if (currpos_x - lastpos_x > 0) {
