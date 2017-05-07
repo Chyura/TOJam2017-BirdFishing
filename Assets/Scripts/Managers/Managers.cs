@@ -8,16 +8,19 @@ using UnityEngine;
 public class Managers : MonoBehaviour {
 	public static AudioManager audio { get; private set; }
 	public static LevelManager scene { get; private set; }
+	public static Quit quit {get; private set;}
 
 	private List<IGameManager> _startSequence;
 
 	void Awake() {
 		audio = GetComponent<AudioManager> ();
 		scene = GetComponent<LevelManager> ();
+		quit = GetComponent<Quit> ();
 
 		_startSequence = new List<IGameManager> ();
 		_startSequence.Add(audio);
 		_startSequence.Add (scene);
+		_startSequence.Add (quit);
 
 		StartCoroutine (StartupManagers ());
 	}

@@ -105,7 +105,7 @@ public class RandomFlyScript : MonoBehaviour {
 		//animator.SetInteger ("States", 0);
 
 
-		iTween.MoveTo(gameObject, iTween.Hash("path", randomPoints, "speed", birdSpeed, 
+		iTween.MoveTo(gameObject, iTween.Hash("name", "birbs", "path", randomPoints, "speed", birdSpeed, 
 			"easetype", iTween.EaseType.linear, "oncomplete", "wanderBirb"));
 		
 
@@ -179,7 +179,7 @@ public class RandomFlyScript : MonoBehaviour {
 			}
 		}
 
-		animator.SetInteger ("States", state); // state + 3*invert
+		animator.SetInteger ("States", state + 3*invert); // state + 3*invert
 
 		lastpos_x = currpos_x; 
 	}

@@ -9,9 +9,10 @@ public class Static_Text {
 	void Start () {
 		
 	} 
-	
-	// Update is called once per frame
-	void Update () {
-		
+
+	public static void resetGame() {
+		for (int i = 0; i < birdcaught.Length; ++i) {
+			birdcaught[i] = 0;
+		}
 	}
 }
