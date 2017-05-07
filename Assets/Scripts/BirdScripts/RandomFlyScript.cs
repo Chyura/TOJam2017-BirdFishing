@@ -29,7 +29,9 @@ public class RandomFlyScript : MonoBehaviour {
 	private Vector3 delta = new Vector3(0,0,0);
 	private bool fly = false;
 	private bool trap_down = false;
+	private bool isWander = false;
 	private int invert = 0;
+	private float dist = 0f;
 
 	private float apparent_y = 0f;
 	private float horizon_scale = 0f;
@@ -37,7 +39,7 @@ public class RandomFlyScript : MonoBehaviour {
 	private float unit = 10.0f;
 	private Animator animator;
 
-	private float currpos_x;
+	private float currpos_x, currpos_y;
 	private float lastpos_x = 0f;
 	private int state = 0;
 	private Vector3[] func_rand;
@@ -45,6 +47,9 @@ public class RandomFlyScript : MonoBehaviour {
 	void Start () {
 
 		animator = this.gameObject.GetComponent<Animator> ();
+
+		box_center_x = boxTrap.position.x;
+		box_center_y = boxTrap.position.y + shadow_disp;
 
 		screenBounds [0] = Camera.main.ScreenToWorldPoint (new Vector3(0, Camera.main.pixelHeight, 0));
 		screenBounds [1] = Camera.main.ScreenToWorldPoint (new Vector3(Camera.main.pixelWidth, 
@@ -97,7 +102,7 @@ public class RandomFlyScript : MonoBehaviour {
 
 		iTween.MoveTo(gameObject, iTween.Hash("path", randomPoints, "speed", birdSpeed, 
 			"easetype", iTween.EaseType.linear, "oncomplete", "wanderBirb"));
-		//wanderBirb = true;
+		
 
 	}
 
@@ -106,12 +111,16 @@ public class RandomFlyScript : MonoBehaviour {
 		iTween.MoveTo (gameObject, iTween.Hash ("position", getBoxLanding(),
 			"speed", birdSpeed/4, "easetype", iTween.EaseType.easeInOutSine, "oncomplete", "wanderBirbRepeatTemp"));
 		state = Random.Range(0, 2) * 2 + 0;
-
+		isWander = true;
 	} 
 
 	void wanderBirbRepeatTemp(){
 		if (!trap_down) {
-			wanderBirb();
+			wanderBirb ();
+		} 
+		else {
+			flyBirb ();
+			state = 1;
 		}
 	}
 	void flyBirb(){
@@ -138,6 +147,9 @@ public class RandomFlyScript : MonoBehaviour {
 			rescaleBird ();
 		}
 		currpos_x = gameObject.transform.position.x;
+		currpos_y = gameObject.transform.position.y;
+
+
 		if (currpos_x - lastpos_x > 0) {
 			invert = 1;
 			//Debug.Log ("Right");
@@ -146,18 +158,29 @@ public class RandomFlyScript : MonoBehaviour {
 			//Debug.Log ("Left");
 		}
 
+		dist = Mathf.Sqrt((currpos_x - box_center_x)*(currpos_x - box_center_x) + (currpos_y - box_center_y)*(currpos_y - box_center_y)); 
+
+		if (Input.GetKeyDown (KeyCode.Space)) {
+			if ((!trap_down) && (dist < 1)) {
+				trap_down = true;
+				flyBirb ();
+				state = 1;
+				birdSpeed *= 3;
+			}
+		}
+
 		animator.SetInteger ("States", state); // state + 3*invert
 
 		lastpos_x = currpos_x; 
 	}
 
 	Vector3 getBoxLanding() {
-		box_center_x = boxTrap.position.x;
-		box_center_y = boxTrap.position.y;
+		/*box_center_x = boxTrap.position.x;
+		box_center_y = boxTrap.position.y;*/
 		Debug.Log(box_center_x + " " + box_center_y);
 		float xValue = Random.Range (box_center_x - box_radius, box_center_x + box_radius);
-		float yValue = Random.Range (box_center_y + shadow_disp - box_radius / compress, 
-									box_center_y + shadow_disp + box_radius / compress);
+		float yValue = Random.Range (box_center_y - box_radius / compress, 
+									box_center_y + box_radius / compress);
 		return new Vector3 (xValue, yValue, 0);
 	}
 
