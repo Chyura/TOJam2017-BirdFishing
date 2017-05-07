@@ -234,8 +234,8 @@ public class RandomFlyScript : MonoBehaviour {
 
 
 				///BIRD IS 'CAUGHT' HERE, LOG with var birdtype///
-				collection.changeBirb(birdtype);
-
+				Static_Text.birdcaught[birdtype]++;
+				collection.changeBirb (birdtype);
 			}
 
 

@@ -10,6 +10,9 @@ public class CollectionController : MonoBehaviour {
 	[SerializeField] AnimationClip mysteryBirbAnim;
 	[SerializeField] Image goat;
 	[SerializeField] Sprite goatI;
+	[SerializeField] Text name;
+	[SerializeField] Text description;
+	[SerializeField] Text Count;
 
 	// Use this for initialization
 	void Start () {
@@ -23,7 +26,15 @@ public class CollectionController : MonoBehaviour {
 	}
 
 	public void changeText(int birb) {
-
+		if (Static_Text.birdcaught >= 1) {
+			bigBirb.clip = birbAnims [birb];
+			name.text = Static_Text.birdnames [birb];
+			description.text = Static_Text.flavortext [birb];
+		} else {
+			bigBirb.clip = mysteryBirbAnim;
+			name.text = Static_Text.mysteryBirbName;
+			description.text = Static_Text.mysteryBirbText;
+		}
 	}
 
 }
