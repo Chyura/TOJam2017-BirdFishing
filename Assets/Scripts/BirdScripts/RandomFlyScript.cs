@@ -3,6 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class RandomFlyScript : MonoBehaviour {
+
+	public AudioClip Flapping;
+	AudioSource audio;
+
 	private Vector3[] randomPoints;
 	//private float currentPathPercent = 0f;
 	private int randomMin = 2;
@@ -47,6 +51,7 @@ public class RandomFlyScript : MonoBehaviour {
 	void Start () {
 
 		animator = this.gameObject.GetComponent<Animator> ();
+		audio = this.gameObject.GetComponent<AudioSource>();
 
 		box_center_x = boxTrap.position.x;
 		box_center_y = boxTrap.position.y + shadow_disp;
@@ -136,6 +141,7 @@ public class RandomFlyScript : MonoBehaviour {
 			"speed", birdSpeed * flyConstMultiplier, "delay", flyDelayTime, "easetype", iTween.EaseType.easeInQuad));
 		delta = new Vector3(ran_x_speed, ran_y_speed, 0);
 		fly = true;
+		audio.Play ();
 		Debug.Log (delta);
 		Debug.Log ("fly");
 		//set invert conditional
@@ -156,6 +162,10 @@ public class RandomFlyScript : MonoBehaviour {
 		} else {
 			invert = 0;		
 			//Debug.Log ("Left");
+		}
+
+		if (currpos_y > 8) {
+			audio.Stop ();
 		}
 
 		dist = Mathf.Sqrt((currpos_x - box_center_x)*(currpos_x - box_center_x) + (currpos_y - box_center_y)*(currpos_y - box_center_y)); 

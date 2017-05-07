@@ -6,6 +6,7 @@ public class BirbAnimation : MonoBehaviour {
 
 	private Animator animator;
 
+
 	void Start() {
 		animator = this.GetComponent<Animator> ();
 	}
