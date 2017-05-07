@@ -26,7 +26,7 @@ public class CollectionController : MonoBehaviour {
 	}
 
 	public void changeText(int birb) {
-		if (Static_Text.birdcaught >= 1) {
+		if (Static_Text.birdcaught[birb] >= 1) {
 			bigBirb.clip = birbAnims [birb];
 			name.text = Static_Text.birdnames [birb];
 			description.text = Static_Text.flavortext [birb];
