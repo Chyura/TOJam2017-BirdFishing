@@ -17,8 +17,12 @@ public class BoxAnimatorScript : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if (Input.GetKeyDown (KeyCode.Space)) {
-			animator.SetBool ("BoxFall", true);
-			audio.Play ();
+			if (!animator.GetBool ("BoxFall")) {
+				animator.SetBool ("BoxFall", true);
+				audio.Play ();
+			} else if (animator.GetBool ("BoxFall")) {
+				animator.SetBool ("BoxFall", false);
+			}
 		}
 	}
 }
