@@ -31,9 +31,10 @@ public class RandomFlyScript : MonoBehaviour {
 	private float horizon_scale = 0f;
 	private float scale_fact = 1.0f;
 	private float unit = 10.0f;
+	private Animator animator;
 	// Use this for initialization
 	void Start () {
-		
+		animator = this.gameObject.GetComponent<Animator> ();
 		// this might not take into account the size of the birb
 		screenBounds [0] = Camera.main.ScreenToWorldPoint (new Vector3(0, Camera.main.pixelHeight, 0));
 		screenBounds [1] = Camera.main.ScreenToWorldPoint (new Vector3(Camera.main.pixelWidth, 
@@ -60,8 +61,10 @@ public class RandomFlyScript : MonoBehaviour {
 
 			Debug.Log (randomPoints[i]);
 		}
-		iTween.MoveTo(gameObject, iTween.Hash("path", randomPoints, "speed", birdSpeed, 
-			"easetype", iTween.EaseType.spring, "oncomplete", "flyBirb"));
+
+		//iTween.MoveTo(gameObject, iTween.Hash("path", randomPoints, "speed", birdSpeed/30, 
+		//	"easetype", iTween.EaseType.spring, "oncomplete", "flyBirb"));
+		flyBirb ();
 
 	}
 
@@ -74,19 +77,21 @@ public class RandomFlyScript : MonoBehaviour {
 		if (ran_dir == 1) {
 			ran_x_speed *= -1;
 		}
-		iTween.MoveTo (gameObject, iTween.Hash ("position", new Vector3 (0, 100, 0),
-			"speed", birdSpeed, "easetyoe", iTween.EaseType.easeInOutSine));
+		ran_dir = Random.Range (-200, 200);
+		iTween.MoveTo (gameObject, iTween.Hash ("position", new Vector3 (ran_dir, 100, 0),
+			"speed", birdSpeed/4, "easetyoe", iTween.EaseType.easeInOutSine));
 		delta = new Vector3(ran_x_speed, ran_y_speed, 0);
 		fly = true;
 		Debug.Log (delta);
 		Debug.Log ("fly");
+		animator.SetInteger ("States", 1);
 	}
 
 	void Update(){
-		//if (fly) {
-		//	transform.Translate(delta);
-		//}
-		rescaleBird ();
+		if (!fly) {
+			rescaleBird ();
+		}
+
 	}
 
 	Vector3 getBoxLanding() {
